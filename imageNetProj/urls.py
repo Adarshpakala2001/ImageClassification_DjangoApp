@@ -16,13 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
-from firstApp import views
 from django.conf.urls.static import static
+from firstApp import views
 from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url('^$',views.index,name='homepage'),
+    url('',views.index,name='homepage'),
     url('predictImage',views.predictImage,name='predictImage'),
     url('viewDataBase',views.viewDataBase,name='viewDataBase'),
 ]

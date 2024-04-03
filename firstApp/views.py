@@ -2,7 +2,6 @@ from django.shortcuts import render
 # Create your views here.
 
 from django.core.files.storage import FileSystemStorage
-
 from keras.models import load_model
 from keras.preprocessing import image
 import tensorflow as tf
